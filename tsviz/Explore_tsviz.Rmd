@@ -1,0 +1,46 @@
+---
+title: "Exploring tsviz"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction to tsviz
+
+'tsviz' is an R package for Time Series Visualization - it contains the tsviz add-in and a sample dataset. It can be also used from the add-ins menu in R Studio; without loading the package with 'library()'.
+
+
+#### Install and Load Packages
+
+```{r}
+# install.packages('tsviz')
+# library(tsviz)
+
+```
+
+
+
+A data frame can be analyzed with tsviz if:
+- it has at least one column of type 'Date'
+- it has at least one column of type 'numeric'
+
+
+#### Sample Use case 
+
+```{r}
+
+# prices <- crypto_prices
+# tsviz()
+
+```
+
+
+### References
+
+- Medium article <https://towardsdatascience.com/introducing-tsviz-interactive-time-series-visualization-in-r-studio-a96cde507a14>
+
+- tsviz on github <https://github.com/xtreamsrl/tsviz>
+
+
