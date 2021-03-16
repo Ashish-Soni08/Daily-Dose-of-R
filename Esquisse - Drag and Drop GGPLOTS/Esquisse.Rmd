@@ -1,0 +1,61 @@
+---
+title: "Build GGPLOTS with Tableau Drag-and-Drop (esquisse)"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction
+
+esquisse - a Tableau-style drag-and-drop interface for building ggplots.
+
+
+```{r libraries, hide = FALSE}
+
+pacman::p_load(esquisse, modeldata, tidyverse)
+
+```
+
+## LOAD DATA
+
+You can also embed plots, for example:
+
+```{r data}
+
+data("drinks")
+
+data("mpg")
+
+
+drinks
+
+mpg
+
+```
+
+
+## USE CASE
+
+The `esquisser()` function fires up the ggplot builder dashboard
+Just load the dataset you want to explore
+Then drag-and-drop
+
+```{r}
+
+
+esquisser()
+
+
+```
+
+
+Get the ggplot code
+
+Once you are happy with your ggplot, you can get the code used to produce it! - From the Export & code tab on the lower right hand corner
+
+## References
+
+Youtube video : <https://www.youtube.com/watch?v=6LV_p3Zi-LM>
+
